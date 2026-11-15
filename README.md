@@ -2,7 +2,13 @@
 
 My code-along of Andrej Karpathy's [Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY), trained on my MacBook (M3, 16 GB) with PyTorch's `mps` device. No NVIDIA GPU needed.
 
-Next steps after the video: add a KV cache and measure the speedup, then quantize the KV cache to 8-bit and 4-bit and measure the quality loss.
+## Plan
+1. **Code-along** on Tiny Shakespeare (character-level), matching the video's results.
+2. **Tang poetry GPT (唐诗):** train the same model on ~55,000 Tang poems from [chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry) (MIT license). Character-level fits Chinese naturally: one character = one token, but the vocabulary grows from 65 to several thousand. Measure what it learns: correct 5- or 7-character lines? Matching line counts (绝句 = 4 lines, 律诗 = 8)? Rhyme?
+3. **KV cache:** add one to generation and measure the speedup.
+4. **Quantize the KV cache** to 8-bit and 4-bit and measure the quality loss.
+
+Every experiment starts with a written prediction.
 
 ## Setup (already done)
 - Python 3.12 virtual environment in `.venv/` (`torch`, `numpy`, `matplotlib`, `ipykernel`; see `requirements.txt`)
