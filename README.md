@@ -12,7 +12,7 @@ Every experiment starts with a written prediction.
 
 ## Setup (already done)
 - Python 3.12 virtual environment in `.venv/` (`torch`, `numpy`, `matplotlib`, `ipykernel`; see `requirements.txt`)
-- Dataset: `data/input.txt`, Tiny Shakespeare (~1.1 MB) from [karpathy/char-rnn](https://github.com/karpathy/char-rnn)
+- Dataset: `input.txt`, Tiny Shakespeare (~1.1 MB) from [karpathy/char-rnn](https://github.com/karpathy/char-rnn), downloaded in the notebook with `!wget` like the video
 
 ## How to start
 1. Open this folder in VS Code: `code projects/build-gpt` (or File → Open Folder).
