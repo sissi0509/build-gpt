@@ -24,6 +24,7 @@ Check the setup anytime: `.venv/bin/python check_setup.py`
 ## Files
 | File | What |
 |---|---|
-| `gpt.ipynb` | My code-along notebook: one section per part of the video, cells empty for me to fill |
+| `gpt.ipynb` | My code-along notebook: one section per part of the video |
+| `bigram.py` | The bigram model as one script, with train/val loss estimates (`python bigram.py`, ~7 s on CPU, val loss ≈ 2.49) |
 | `QUESTIONS.md` | Questions I write down while watching |
 | `check_setup.py` | Confirms PyTorch + the Mac GPU + the dataset work |
